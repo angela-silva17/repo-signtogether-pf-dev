@@ -1,0 +1,108 @@
+.social-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #1C1C20;
+}
+
+
+/* Button and icons */
+.btn-cta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    background: #16C5B4;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: poppins;
+    grid-column: span 2;
+}
+
+
+.btn-primary a, .btn-secundary a,  .btn-primary {
+    text-decoration: none;
+    color: #042f2f;
+}
+.btn-primary a:hover, .btn-primary:hover {
+    color: #FBFCFC;
+
+}    
+
+.btn-primary:hover {
+    background-color: #0d948a;
+}
+
+.btn-secundary {
+    padding: 8px 18px;
+    background-color: #5eead6;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: poppins;
+    grid-column: span 2;
+}
+
+
+/* Search - Input */
+.search , .email-input, .comment-input, .phone-number-input,
+.last-name-input, .name-input  {
+    --padding: 8px 18px;
+
+    align-items: center;
+    display: flex;
+    padding: var(--padding);
+    background-color: #fbfcfcb2;
+    border:  1px solid #0d948b5b;
+    border-radius: 32px;
+    cursor: pointer;
+ 
+}
+
+input, textarea{
+    font-size: 14px;
+    font-family: poppins;
+    padding: 1px 0px;
+    align-items: center;
+    border: 0px;
+    outline: 0;
+    background: transparent;
+    margin-left: var(--padding);
+
+
+
+}
+.search:hover , .email-input:hover, .comment-input:hover, .phone-number-input:hover,
+.last-name-input:hover, .name-input:hover{
+    border: 1px solid #16c5b4;
+    color: #36363e8c;
+    box-shadow: 0 0 4px #16c5b483;
+}    
+
+
+.email-send{
+    display: flex;
+    height: 45px;
+    gap: 12px;
+    border-radius: none;
+    cursor: pointer;
+    margin-left: var(--padding);
+    
+}
+
+.bootstrap-icon .bi.bi-search{
+    font-size: 16px;
+    color: #1C1C20;
+}
+
+.bootstrap-icon i {
+    font-size: 24px;
+    color: #1C1C20;
+    
+}

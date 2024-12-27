@@ -1,0 +1,33 @@
+//Color Palette
+$bg-color:#f0fdfa9d;
+
+
+.footer {
+    background-color: $bg-color;
+    margin-top: 100px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 32px;
+}
+
+.footer-links div {
+    flex: 1;
+}
+
+.footer-links a {
+    display: block;
+    margin: 32px 0;
+    text-decoration: none;
+    color: #36363E;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}

@@ -1,4 +1,190 @@
+//Links to pages sass
+@use "./components/header";
+@use "./components/footer";
+@use "./global/components-btn";
+@use "./global/font-style";
+@use "./global/media-queries";
+@use "./pages/contact";
+@use "./pages/main-aboutus";
+@use "./pages/main-allcourses";
+@use "./pages/resources";
+
+
+// Color Pallete
+$primary-color: #16C5B4 ;
+$secundary-color: #5eead6;
+$body-color: #FBFCFC ;
+$text-color: #1C1C20;
+$text-hover-color: #0E8075;
+
+
+
+
 body {
-    background-color:aquamarine ;
-    padding: 100px;
+    background-color: $body-color ;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: $text-color;
+    justify-content: center;
+
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.2px;
 }
+
+/* Main content */
+.container-main-cta {
+    background-color: #f0fdfaa1;
+    border: 0.5px solid #16c5b4;
+    border-radius: 32px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.text-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-text-cta {
+    text-align: center;
+}
+
+.principal-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.principal-text h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Card images */
+.container-img {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-teacher {
+    flex-grow: 1;
+    width: 30%;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(234, 234, 234, 0.5);
+    object-fit: cover;
+    background-color: #1c1c2049;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.hero h1 {
+    font-size: 52px; 
+    font-weight: 700; 
+    line-height: 78px; 
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+
+/* Cards  text*/
+.container-body {
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 100%;
+
+    
+}
+
+.information {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.card-img{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #FBFCFC;
+    border-radius: 24px;
+    box-shadow: 0 0 48px rgba(234, 234, 234, 0.19);
+    border: 1px solid rgba(207, 207, 213, 0.5);
+    padding: 32px;
+    overflow: hidden;
+}
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.card-content {
+    flex: 1;
+    background: #ccfbf2;
+    border-radius: 24px;
+    padding: 32px;
+    align-content: center;
+}
+
+.card-content.light {
+    background: #FBFCFC;
+    border: 1px solid rgba(207, 207, 213, 0.5);
+}
+
+.title {
+    margin-bottom: 24px;
+    font-size: 42px;
+    font-weight: 600;
+    color: #1C1C20;
+    line-height: 63px;
+    text-align: left;
+}
+
+.title-image {
+    font-size: 42px;
+    font-weight: 600;
+    color: #1C1C20;
+    line-height: 63px;  
+    text-align: left;
+
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #36363E;
+    text-align: left;
+    line-height: 30px;
+}
+
+.content-image img{
+    
+    border-radius: 12px;
+    width: calc(100% - 0px);
+    height: 100;
+    object-fit: cover; 
+}
+

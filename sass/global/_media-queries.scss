@@ -1,0 +1,98 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Responsive Styles 
+ @media (max-width: 992px) {
+    body {
+        text-align: center; 
+        width: 100%;
+    }
+
+    
+    .navbar-container {
+        display: none;
+        justify-content: space-between;
+
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .navbar-container.active {
+        display: flex;
+        padding: 10px 100px;
+    }
+
+    .navbar-link {
+        padding: 15px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        display: block; //Mostrar el icono del menú en pantallas pequeñas
+    }
+
+    #toggler {
+        left:auto;
+    }
+   
+}
+
+@media (max-width: 576px) {
+    .navbar-container,
+    .btn-cta {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .btn-primary {
+        width: 100%;
+    }
+    .footer-links {
+        flex-direction: column;
+    }
+    .container-img {
+        flex-direction: column;
+    }
+    .image-teacher .container-img {
+        width: 100%;
+    }
+    .container-body .information {
+    flex-direction: column;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+background: #e7eaeece;
+border-left: 0.5px solid #d9d9d957;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background:  #16c5b43f;
+    border-radius: 32px;
+}
